@@ -9,6 +9,7 @@
 
 from math import isclose, exp
 
+#Determine the value of m using False-Position Method (Regula-Falsi Method)
 def false_posi(f, x0, x1, err):
     if x1 < x0:
         print('The Input points a0 and a1 should be such that x0 < x1')
@@ -41,7 +42,7 @@ def false_posi(f, x0, x1, err):
             x0 = Xnew
         Xold = Xnew
 
-
+#Solution for Q1
 def fun(x):
     return((1 - exp(-15*9/x))*9.8*x/15 -35)
 
