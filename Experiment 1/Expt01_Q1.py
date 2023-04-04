@@ -10,7 +10,7 @@
 from math import isclose, exp
 
 #Determine the value of m using False-Position Method (Regula-Falsi Method)
-def false_posi(f, x0, x1, err):
+def false_position(f, x0, x1, err):
     if x1 < x0:
         print('The Input points a0 and a1 should be such that x0 < x1')
         quit()
@@ -53,5 +53,5 @@ for i in range(1,50):
         break
 
 
-root = false_posi(fun,low,up,0.001)
-print(root)
+root = false_position(fun,low,up,0.001)
+print('Value of m at 0.1 level is %0.4f' % (root))
